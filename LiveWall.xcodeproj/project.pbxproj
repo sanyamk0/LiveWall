@@ -6,7 +6,20 @@
 	objectVersion = 110;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		609702C03080299F0071DFC8 /* WallpaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609702BF3080299F0071DFC8 /* WallpaperManager.swift */; };
+		609702C13080299F0071DFC8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609702BC3080299F0071DFC8 /* MenuView.swift */; };
+		609702C23080299F0071DFC8 /* VideoLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609702BE3080299F0071DFC8 /* VideoLibrary.swift */; };
+		609702C33080299F0071DFC8 /* LiveWallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609702BB3080299F0071DFC8 /* LiveWallApp.swift */; };
+		609702C43080299F0071DFC8 /* Thumbnails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609702BD3080299F0071DFC8 /* Thumbnails.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		609702BB3080299F0071DFC8 /* LiveWallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveWallApp.swift; sourceTree = "<group>"; };
+		609702BC3080299F0071DFC8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		609702BD3080299F0071DFC8 /* Thumbnails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnails.swift; sourceTree = "<group>"; };
+		609702BE3080299F0071DFC8 /* VideoLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoLibrary.swift; sourceTree = "<group>"; };
+		609702BF3080299F0071DFC8 /* WallpaperManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperManager.swift; sourceTree = "<group>"; };
 		60B3E8AE307FA0DA00661371 /* LiveWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -31,6 +44,11 @@
 			isa = PBXGroup;
 			children = (
 				60B3E8B0307FA0DA00661371 /* LiveWall */,
+				609702BB3080299F0071DFC8 /* LiveWallApp.swift */,
+				609702BC3080299F0071DFC8 /* MenuView.swift */,
+				609702BD3080299F0071DFC8 /* Thumbnails.swift */,
+				609702BE3080299F0071DFC8 /* VideoLibrary.swift */,
+				609702BF3080299F0071DFC8 /* WallpaperManager.swift */,
 				60B3E8AF307FA0DA00661371 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +94,7 @@
 				TargetAttributes = {
 					60B3E8AD307FA0DA00661371 = {
 						CreatedOnToolsVersion = 27.0;
+						LastSwiftMigration = 2700;
 					};
 				};
 			};
@@ -110,6 +129,11 @@
 		60B3E8AA307FA0DA00661371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				609702C03080299F0071DFC8 /* WallpaperManager.swift in Sources */,
+				609702C13080299F0071DFC8 /* MenuView.swift in Sources */,
+				609702C23080299F0071DFC8 /* VideoLibrary.swift in Sources */,
+				609702C33080299F0071DFC8 /* LiveWallApp.swift in Sources */,
+				609702C43080299F0071DFC8 /* Thumbnails.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -238,13 +262,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VHN22FYW54;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -258,6 +285,8 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -268,13 +297,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VHN22FYW54;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +320,7 @@
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
